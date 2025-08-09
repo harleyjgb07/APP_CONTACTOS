@@ -1,4 +1,6 @@
 APP_CONTACTOS
+
+
 Aplicación web para gestionar contactos desarrollada en PHP con MySQL y PDO. Permite registrar usuarios, iniciar sesión y realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) de forma segura.
 ---
 
