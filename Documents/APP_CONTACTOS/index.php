@@ -32,5 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <label for="password">Contraseña:</label>
   <input type="password" name="password" placeholder="Contraseña" required><br><br>
   <button type="submit">Iniciar sesión</button><br>
-  <a href="registro.php">volver</a>
+</form>
+<form action="registro.php">
+    <button type="submit">Crear cuenta</button>
 </form>

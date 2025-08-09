@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("INSERT INTO usuarios (nombre, email, password) VALUES (?, ?, ?)");
     $stmt->execute([$nombre, $email, $password]);
 
-    header("Location: login.php");
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -33,8 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <label for="password">Ingrese su contraseña:</label>
   <input type="password" name="password" placeholder="Contraseña" required><br><br>
   
-  <button type="submit">Registrarse</button>
-</form>
-<form action="login.php">
-  <button type="submit">iniciar sección</button>
+  <button type="submit">Registrarse</button><br>
+  <a href="index.php">volver</a>
 </form>

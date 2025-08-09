@@ -3,7 +3,7 @@ session_start();
 require 'includes/conexion.php';
 
 if (!isset($_SESSION['usuario_id'])) {
-    header('Location: login.php');
+    header('Location: index.php');
     exit;
 }
 $usuario_id = $_SESSION['usuario_id'];
@@ -15,7 +15,7 @@ $contactos = $stmt->fetchAll();
 ?>
 
 <h2>Mis Contactos</h2>
-<a href="login.php">Cerrar sesión</a> | <a href="agregar_contacto.php">Agregar contacto</a>
+<a href="logaut.php">Cerrar sesión</a> | <a href="agregar_contacto.php">Agregar contacto</a>
 
 
 <?php if (empty($contactos)): ?>
