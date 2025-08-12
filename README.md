@@ -31,7 +31,7 @@ APP_CONTACTOS/
 1. Clona este repositorio:
    git clone https://github.com/usuario/APP_CONTACTOS.git
 2. Navega al repositorio:
-   cd php_intermedio
+   cd APP_CONTACTOS
 3. Iniciar el servidor PHP de la siguiente forma:
    php -S localhost:7000
 4. Abre tu navegador y visita http://localhost:7000 para acceder a la aplicación.
