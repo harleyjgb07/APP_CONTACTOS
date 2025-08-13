@@ -25,6 +25,8 @@ $contacto = $stmt->fetch();
 
 if (!$contacto) {
     die("Contacto no encontrado o no tienes permiso para editarlo.");
+    header("location: contactos.php");
+    exit;
 }
 
 // Si se envía el formulario
